@@ -1,0 +1,8 @@
+{
+  "appId": "com.craftsaathi.ai",
+  "appName": "CRAFTSAATHI AI",
+  "webDir": "dist",
+  "server": {
+    "cleartext": true
+  }
+}

@@ -1,0 +1,6 @@
+import { useNavigate } from "react-router-dom";
+import { useApp } from "../context/AppContext";
+export default function Profile(){
+ const nav=useNavigate(); const {language}=useApp();
+ return <div className="page pb-24"><div className="container max-w-3xl"><span className="tag">PROFILE</span><div className="card p-7 mt-5"><div className="w-20 h-20 rounded-full bg-[#ead0c2] flex items-center justify-center text-3xl font-black">M</div><h1 className="text-3xl font-black mt-5">Meena</h1><p className="text-gray-600">Handloom Artisan • Tamil Nadu</p><div className="grid grid-cols-2 gap-4 mt-7"><div className="p-4 rounded-2xl bg-[#f8f3ef]"><b>18</b><div className="text-sm text-gray-500">Products</div></div><div className="p-4 rounded-2xl bg-[#f8f3ef]"><b>34</b><div className="text-sm text-gray-500">Orders</div></div><div className="p-4 rounded-2xl bg-[#f8f3ef]"><b>₹48,500</b><div className="text-sm text-gray-500">Monthly Revenue</div></div><div className="p-4 rounded-2xl bg-[#f8f3ef]"><b>{language}</b><div className="text-sm text-gray-500">Language</div></div></div><button onClick={()=>nav("/settings")} className="btn btn-outline mt-6 w-full">Settings</button></div></div></div>
+}
